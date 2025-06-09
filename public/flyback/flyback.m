@@ -1,0 +1,15 @@
+Vin=100;
+Vo=12;
+Po=20;
+R=Vo^2/Po;
+n=1/5;
+d=Vo/(Vin*(n)+Vo);
+Im=(Vo^2)/(Vin*d*R);
+Iin=Im*d;
+delta_iL=0.3*Im;
+fsw=50e3;
+delta_Vc=0.01*Vo;
+d=round(d,2);
+Lm=abs(Vin*d/(delta_iL*fsw));
+C=Vo*d/(delta_Vc*R*fsw);
+d=d*100;

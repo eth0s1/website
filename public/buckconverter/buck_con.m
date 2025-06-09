@@ -1,0 +1,14 @@
+Vin=200;
+Vc=100;
+P=1000;
+d=0.5;
+fsw=10000;
+T=1/fsw;
+%L=1e-3;
+IR=P/Vc;
+delta_il=IR*0.2;
+delta_vc=Vc*0.001;
+%Il=Ir c 
+%delta_il=(Vin-Vc)*d*T/L
+L=(Vin-Vc)*d*T/delta_il
+C=(1-d)/(8*L*delta_vc*fsw^2)
