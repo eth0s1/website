@@ -1,70 +1,60 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
+import Link from 'next/link';
 
-export default function Navbar() {
+const navStyle: React.CSSProperties = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  gap: '2.5rem',
+  padding: '1.2rem 0 1.2rem 0',
+  borderBottom: '1px solid #eee',
+  marginBottom: '2.5rem',
+  fontFamily: 'inherit',
+  fontSize: '1.15rem',
+  background: '#fff',
+  position: 'sticky',
+  top: 0,
+  zIndex: 10,
+};
+
+const linkStyle: React.CSSProperties = {
+  color: '#222',
+  textDecoration: 'none',
+  fontWeight: 500,
+  position: 'relative',
+  padding: '0.2rem 0',
+  transition: 'color 0.2s',
+};
+
+const Navbar = () => {
   const pathname = usePathname() || '/';
+
   const links = [
-    { href: "/#intro", label: "Giriş" },
-    { href: "/#about", label: "Hakkımda" },
-    { href: "/yazilar", label: "Yazılar" },
-    { href: "/projeler", label: "Projeler" },
-    { href: "/iletisim", label: "İletişim" },
+    { href: '/', label: 'Hakkımda' },
+    { href: '/blog', label: 'Blog' },
+    { href: '/projeler', label: 'Projeler' },
+    { href: '/iletisim', label: 'İletişim' },
   ];
 
-  const isActive = (href: string) => {
-    if (href === "/#about" || href === "/#intro") {
-      return pathname === "/";
-    }
-    return pathname.startsWith(href.replace("#about", "").replace("#intro", ""));
-  };
-
   return (
-    <nav style={{
-      width: '100%',
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      zIndex: 100,
-      background: '#fff',
-      boxShadow: '0 2px 12px #0001',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: 36,
-      padding: '1.1rem 0 1.1rem 0',
-      fontSize: '1.18rem',
-      fontWeight: 500,
-      letterSpacing: 0.2,
-      fontFamily: 'Segoe UI, Fira Mono, Arial, sans-serif',
-    }}>
+    <nav style={navStyle}>
       {links.map(link => {
-        const active = isActive(link.href);
+        const isActive =
+          (link.href === "/#about" && pathname === "/") ||
+          (link.href === "/#intro" && pathname === "/") ||
+          (link.href !== "/#about" && link.href !== "/#intro" && pathname.startsWith(link.href.replace("#about", "").replace("#intro", "")));
+
         return (
           <a
             key={link.href}
             href={link.href}
             style={{
-              color: active ? '#0070f3' : '#222',
-              textDecoration: 'none',
-              margin: '0 18px',
-              fontWeight: active ? 700 : 500,
-              fontSize: active ? '1.25rem' : '1.13rem',
-              letterSpacing: 0.3,
-              borderBottom: active ? '2.5px solid #0070f3' : '2.5px solid transparent',
-              transition: 'all 0.22s cubic-bezier(.4,2,.6,1)',
-              borderRadius: 6,
-              padding: '0.2rem 0.7rem',
-              boxShadow: active ? '0 2px 12px #0070f322' : 'none',
+              ...linkStyle,
+              color: isActive ? '#0070f3' : '#222',
             }}
-            onMouseEnter={e => {
-              e.currentTarget.style.transform = 'scale(1.11)';
-              e.currentTarget.style.boxShadow = '0 4px 18px #0070f344';
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.transform = 'scale(1)';
-              e.currentTarget.style.boxShadow = active ? '0 2px 12px #0070f322' : 'none';
-            }}
+            className="nav-link"
           >
             {link.label}
           </a>
@@ -72,4 +62,6 @@ export default function Navbar() {
       })}
     </nav>
   );
-} 
+};
+
+export default Navbar; 

@@ -29,7 +29,7 @@ const linkStyle: React.CSSProperties = {
 const Navbar = () => (
   <nav style={navStyle}>
     <Link href="/" style={linkStyle} className="nav-link">Hakkımda</Link>
-    <Link href="/yazilar" style={linkStyle} className="nav-link">Yazılar</Link>
+    <Link href="/blog" style={linkStyle} className="nav-link">Blog</Link>
     <Link href="/projeler" style={linkStyle} className="nav-link">Projeler</Link>
     <Link href="/iletisim" style={linkStyle} className="nav-link">İletişim</Link>
   </nav>

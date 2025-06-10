@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
-import Navbar from "../src/components/Navbar";
+import Navbar from "@/src/components/Navbar";
 
 const sections = [
   { id: "intro", label: "Giriş", icon: "🏠" },
