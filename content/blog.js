@@ -13,7 +13,7 @@ export const blogPosts = [
     slug: "buck-converter",
     title: "Buck Converter (Alçaltan Dönüştürücü Tasarımı)",
     date: "Mayıs 2024",
-    image: "/buckconverter/buck.JPG",
+    image: "/buckconverter/buck.jpg",
     description:
       "Üniversitede alınan seçmeli Güç Elektroniği dersi kapsamında bir buck converter (alçaltan dönüştürücü) devresi tasarlanmış ve bu devrenin MATLAB-Simulink ortamındaki simülasyonu gerçekleştirilmiştir. Simülasyon sırasında elde edilen osiloskop dalga formları, laboratuvar uygulamasında gerçek donanım üzerinde elde edilen osiloskop görüntüleriyle karşılaştırılmış ve gözlemler yapılmıştır. Bu süreçte özellikle duty cycle (çalışma çevrimi oranı), anahtarlama frekansı ve yük direnci gibi parametrelerde yapılan değişikliklerin sistem üzerindeki etkileri incelenmiştir. Ayrıca devre farklı iletim modlarında – CCM (Sürekli İletim Modu), DCM (Kesikli İletim Modu) ve BCM (Sınırda İletim Modu) – çalıştırılarak davranışları gözlemlenmiştir. Bunun yanında, devrede kullanılan MOSFET ve diyot bağlantıları farklı şekillerde yapılandırılarak sistemin performansı üzerindeki etkileri değerlendirilmiştir. Elde edilen veriler üzerinden analizler yapılarak konverter tasarımına dair kapsamlı bir değerlendirme gerçekleştirilmiştir.",
     files: [
@@ -26,7 +26,7 @@ export const blogPosts = [
     slug: "boost-converter",
     title: "Boost Converter (Yükselten Dönüştürücü Tasarımı)",
     date: "Mayıs 2024",
-    image: "/boostconverter/boost.JPG",
+    image: "/boostconverter/boost.jpg",
     description:
       "Üniversitede alınan seçmeli Güç Elektroniği dersi kapsamında bir boost converter (yükselten dönüştürücü) devresi tasarlanmış ve bu devrenin MATLAB-Simulink ortamındaki simülasyonu gerçekleştirilmiştir. Simülasyon sırasında elde edilen osiloskop dalga formları, laboratuvar uygulamasında gerçek donanım üzerinde elde edilen osiloskop görüntüleriyle karşılaştırılmış ve gözlemler yapılmıştır.",
     files: [
@@ -38,7 +38,7 @@ export const blogPosts = [
     slug: "buckboost-converter",
     title: "Buck-Boost Converter (Alçaltan-Yükselten Dönüştürücü) Tasarımı",
     date: "Mayıs 2024",
-    image: "/buckboostyazi/buckboost.JPG",
+    image: "/buckboostyazi/buckboost.jpg",
     description:
       "Üniversitede alınan seçmeli Güç Elektroniği dersi kapsamında bir buck-boost converter (alçaltan-yükselten dönüştürücü) devresi tasarlanmış ve bu devrenin MATLAB-Simulink ortamındaki simülasyonu gerçekleştirilmiştir.",
     files: [
@@ -50,7 +50,7 @@ export const blogPosts = [
     slug: "flyback-converter",
     title: "Flyback Converter Tasarımı",
     date: "Haziran 2024",
-    image: "/flyback/flyback.JPG",
+    image: "/flyback/flyback.jpg",
     description:
       "Üniversitede alınan seçmeli Güç Elektroniği dersi kapsamında bir Flyback devresi tasarlanmış ve bu devrenin MATLAB-Simulink ortamındaki simülasyonu gerçekleştirilmiştir.",
     files: [
@@ -64,7 +64,7 @@ export const blogPosts = [
     date: "Ocak 2023",
     hazirlayanlar: "Ethem Işıldar, Hayati Yılmaz",
     description: "Bu çalışmada, Siemens TIA Portal ortamı kullanılarak MATLAB ile PLC arasında haberleşme sağlanmıştır. Yapılan uygulamada, her iki sistem arasında veri alışverişi gerçekleştirilebilmesi için IP adresi atamaları yapılmış ve PLC programı içerisine uygun bloklar eklenmiştir. Böylece PLC tarafından gönderilen veriler MATLAB ortamında okunabilir hale gelmiş, aynı şekilde MATLAB üzerinden gönderilen veriler de PLC tarafından alınarak işlenebilmiştir. Bu haberleşmenin test edilmesi ve doğrulanması amacıyla, Siemens'in kendi PLC simülasyon aracı (PLCSIM) kullanılmıştır. Bu sayede fiziksel donanım olmadan sistemin doğruluğu sanal ortamda test edilmiş ve haberleşme senaryoları başarıyla gerçekleştirilmiştir.",
-    image: "/matlabtoplc/logo.JPG",
+    image: "/matlabtoplc/logo.jpg",
     pdf: "/matlabtoplc/matlab_to_plc.pdf",
     files: [
       { name: "Proje Raporu (PDF)", url: "/matlabtoplc/matlab_to_plc.pdf", size: "443KB" }
@@ -76,7 +76,7 @@ export const blogPosts = [
     title: "PIC Mikrodenetleyici ile Wattmetre Uygulaması",
     date: "Nisan 2024",
     description: "Bu projede, PIC16F877 mikrodenetleyicisi kullanılarak potansiyometreler aracılığıyla giriş değerlerinin ayarlandığı ve wattmetre işlevi gören bir sistem tasarlanmıştır. Sistem, mikrodenetleyici ile programlanarak gerekli işlemleri gerçekleştirecek şekilde hex dosyası oluşturulmuş ve bu dosya Proteus simülasyon ortamında test edilmiştir. Potansiyometreler üzerinden girilen gerilim ve akım değerlerine göre gerçek zamanlı olarak güç (watt) hesabı yapılmakta, sonuçlar Proteus üzerindeki sanal LCD ekran veya benzeri bir arayüz aracılığıyla görselleştirilmektedir. Bu uygulama sayesinde hem analog girişlerin işlenmesi hem de sayısal hesaplamaların mikrodenetleyici ile nasıl yapılabileceği örneklenmiş, wattmetre fonksiyonunun yazılım ve donanım entegrasyonu başarılı bir şekilde simüle edilmiştir.",
-    image: "/wattmetre/wattmetre.JPG",
+    image: "/wattmetre/wattmetre.jpg",
     files: [
       { name: "Proteus ve HEX Dosyaları (ZIP)", url: "/wattmetre/proteusandhex.zip", size: "29KB" }
     ]

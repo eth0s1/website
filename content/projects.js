@@ -15,19 +15,19 @@ export const projects = [
     ],
     gallery: [
       "/iot/android_ana_ekran.jpeg",
-      "/iot/3d.JPG",
-      "/iot/bottomlayer.JPG",
-      "/iot/toplayer.JPG",
-      "/iot/connectionschematic.JPG",
-      "/iot/mcuschematic.JPG",
-      "/iot/pwrschematic.JPG"
+      "/iot/3d.jpg",
+      "/iot/bottomlayer.jpg",
+      "/iot/toplayer.jpg",
+      "/iot/connectionschematic.jpg",
+      "/iot/mcuschematic.jpg",
+      "/iot/pwrschematic.jpg"
     ]
   },
   {
     slug: "matlab-frekans-analizi",
     title: "Matlab Frekans Analizi",
     date: "Mayıs 2024",
-    image: "/projefrq.JPG",
+    image: "/projefrq.jpg",
     description:
       "Bu MATLAB GUI uygulaması, kullanıcıların belirli parametrelere göre sinyaller üretip bu sinyalleri hem zaman hem de frekans düzleminde incelemesini sağlar. Kullanıcı arayüzü üzerinde frekans, genlik ve faz kayması değerleri girilerek kare, üçgen, rampa, tam dalga ve yarım dalga doğrultulmuş sinüs/kosinüs gibi farklı sinyal türleri seçilebilir. Seçilen sinyal zaman düzleminde çizilirken, aynı zamanda Fourier dönüşümü alınarak genlik ve faz spektrumları da görsel olarak sunulur. Kullanıcı dostu arayüzü sayesinde sinyallerin davranışları kolayca analiz edilebilir ve temel sinyal işleme kavramları pratik olarak öğrenilebilir. Proje Adı: Matlab Frekans Analizi, Tarih: Mayıs 2024",
     details: "",
@@ -36,11 +36,11 @@ export const projects = [
       { name: "MATLAB Arayüz Dosyası (proje.fig)", url: "/matlabfreq/matlabcode/proje.fig", size: "53KB" }
     ],
     gallery: [
-      "/matlabfreq/ucgen.JPG",
-      "/matlabfreq/rampa.JPG",
-      "/matlabfreq/tamdalgacos.JPG",
-      "/matlabfreq/tamdalgasin.JPG",
-      "/matlabfreq/yarımdalgasin.JPG"
+      "/matlabfreq/ucgen.jpg",
+      "/matlabfreq/rampa.jpg",
+      "/matlabfreq/tamdalgacos.jpg",
+      "/matlabfreq/tamdalgasin.jpg",
+      "/matlabfreq/yarımdalgasin.jpg"
     ]
   },
   {
@@ -52,10 +52,10 @@ export const projects = [
       "Bu projede, LM5118 entegresi kullanılarak tasarlanan buck-boost konvertör ile 9V ile 36V arasında değişen giriş gerilimi, sabit 12V çıkışa dönüştürülmüştür. Geniş giriş aralığına sahip bu yapı, hem step-down (buck) hem de step-up (boost) modlarında çalışarak kararlı ve verimli bir çıkış sağlar. Özellikle otomotiv, endüstriyel sistemler ve güneş enerjisi gibi değişken besleme kaynaklarında sabit voltaj gerektiren uygulamalar için uygundur.",
     details: "",
     gallery: [
-      "/buckboost/bottomlayer.JPG",
-      "/buckboost/toplayer.JPG",
-      "/buckboost/buckboost.JPG",
-      "/buckboost/schematic.JPG",
+      "/buckboost/bottomlayer.jpg",
+      "/buckboost/toplayer.jpg",
+      "/buckboost/buckboost.jpg",
+      "/buckboost/schematic.jpg",
       "/buckboost/lm5118.jpeg"
     ]
   },
@@ -81,12 +81,12 @@ export const projects = [
       "Bu projede, STM32F103 mikrodenetleyici tabanlı, 2 adet step motor, 2 adet DC motor ve 16x2 LCD ekran içeren çok amaçlı bir robot kontrol PCB'si tasarlanmıştır. 12V giriş gerilimiyle çalışan bu kart, 4 adet buton ile robotun yön kontrolünü manuel olarak sağlayacak şekilde planlanmıştır. Kullanıcı girişlerine karşılık gelen hareket bilgileri, LCD ekran üzerinden anlık olarak görüntülenebilecek şekilde yazılım uyumluluğu gözetilerek tasarım yapılmıştır.",
     details: "",
     gallery: [
-      "/rccontrol/3d.JPG",
-      "/rccontrol/toplayer.JPG",
-      "/rccontrol/bottomlayer.JPG",
-      "/rccontrol/schematic.JPG",
-      "/rccontrol/schematic2.JPG",
-      "/rccontrol/schematic3.JPG"
+      "/rccontrol/3d.jpg",
+      "/rccontrol/toplayer.jpg",
+      "/rccontrol/bottomlayer.jpg",
+      "/rccontrol/schematic.jpg",
+      "/rccontrol/schematic2.jpg",
+      "/rccontrol/schematic3.jpg"
     ]
   },
   {
