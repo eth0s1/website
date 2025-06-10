@@ -180,6 +180,7 @@ export default function Home() {
                 quality={100}
                 style={{ objectFit: 'contain', width: '100%', height: '100%', maxHeight: 500 }}
                 priority
+                unoptimized
               />
             </div>
             <div style={{ flex: '1 1 50%', minWidth: 320, display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '2.5rem 2rem' }}>
@@ -239,6 +240,7 @@ export default function Home() {
                 style={{ 
                   objectFit: 'cover'
                 }}
+                unoptimized
               />
               <div style={{
                 position: 'absolute',
@@ -271,6 +273,7 @@ export default function Home() {
                 style={{ 
                   objectFit: 'cover'
                 }}
+                unoptimized
               />
               <div style={{
                 position: 'absolute',
@@ -303,6 +306,7 @@ export default function Home() {
                 style={{ 
                   objectFit: 'cover'
                 }}
+                unoptimized
               />
               <div style={{
                 position: 'absolute',

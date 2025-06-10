@@ -48,6 +48,7 @@ export default function ProjectGallery({ gallery, title, slug }: ProjectGalleryP
                 width={380}
                 height={240}
                 style={{ objectFit: 'contain', width: '100%', height: 220, borderRadius: 10 }}
+                unoptimized
               />
               <div style={{ textAlign: 'center', fontSize: 14, color: '#666', marginTop: 4 }}>
                 {getAltText(img, i)}
