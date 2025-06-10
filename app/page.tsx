@@ -173,7 +173,7 @@ export default function Home() {
           <div style={{ display: 'flex', alignItems: 'stretch', gap: '0', minHeight: 400, flexWrap: 'wrap' }}>
             <div style={{ flex: '1 1 50%', minWidth: 320, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#fff', borderTopLeftRadius: 24, borderBottomLeftRadius: 24, overflow: 'hidden' }}>
               <Image
-                src="/pp.jpeg"
+                src="/pp.png"
                 alt="Ethem Işıldar Profil Fotoğrafı"
                 width={700}
                 height={700}
