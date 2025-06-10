@@ -1,3 +1,70 @@
 {
-  "pages": {}
+  "pages": {
+    "/_not-found": [
+      "static/chunks/webpack-d1225c659c80d65b.js",
+      "static/chunks/fd9d1056-8f78d26414ffa56c.js",
+      "static/chunks/69-79e73721c11dc586.js",
+      "static/chunks/main-app-6f4c9f2e72be3a9d.js",
+      "static/chunks/app/_not-found-c976bcbb278dbf73.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-d1225c659c80d65b.js",
+      "static/chunks/fd9d1056-8f78d26414ffa56c.js",
+      "static/chunks/69-79e73721c11dc586.js",
+      "static/chunks/main-app-6f4c9f2e72be3a9d.js",
+      "static/chunks/250-8791d0da9d9f814a.js",
+      "static/css/cfccc7eede3a0f0c.css",
+      "static/chunks/app/layout-b66ccae1591acf34.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-d1225c659c80d65b.js",
+      "static/chunks/fd9d1056-8f78d26414ffa56c.js",
+      "static/chunks/69-79e73721c11dc586.js",
+      "static/chunks/main-app-6f4c9f2e72be3a9d.js",
+      "static/chunks/749-09f6b922e4da58eb.js",
+      "static/chunks/app/page-ce5c2dd0c3b07d03.js"
+    ],
+    "/iletisim/page": [
+      "static/chunks/webpack-d1225c659c80d65b.js",
+      "static/chunks/fd9d1056-8f78d26414ffa56c.js",
+      "static/chunks/69-79e73721c11dc586.js",
+      "static/chunks/main-app-6f4c9f2e72be3a9d.js",
+      "static/chunks/app/iletisim/page-29309e83c38f2e4c.js"
+    ],
+    "/projeler/[slug]/page": [
+      "static/chunks/webpack-d1225c659c80d65b.js",
+      "static/chunks/fd9d1056-8f78d26414ffa56c.js",
+      "static/chunks/69-79e73721c11dc586.js",
+      "static/chunks/main-app-6f4c9f2e72be3a9d.js",
+      "static/chunks/749-09f6b922e4da58eb.js",
+      "static/chunks/app/projeler/[slug]/page-79a95bd31cb14fbd.js"
+    ],
+    "/projeler/page": [
+      "static/chunks/webpack-d1225c659c80d65b.js",
+      "static/chunks/fd9d1056-8f78d26414ffa56c.js",
+      "static/chunks/69-79e73721c11dc586.js",
+      "static/chunks/main-app-6f4c9f2e72be3a9d.js",
+      "static/chunks/749-09f6b922e4da58eb.js",
+      "static/chunks/250-8791d0da9d9f814a.js",
+      "static/chunks/app/projeler/page-745e2c04810122da.js"
+    ],
+    "/yazilar/[slug]/page": [
+      "static/chunks/webpack-d1225c659c80d65b.js",
+      "static/chunks/fd9d1056-8f78d26414ffa56c.js",
+      "static/chunks/69-79e73721c11dc586.js",
+      "static/chunks/main-app-6f4c9f2e72be3a9d.js",
+      "static/chunks/749-09f6b922e4da58eb.js",
+      "static/chunks/250-8791d0da9d9f814a.js",
+      "static/chunks/app/yazilar/[slug]/page-26f44a613740d085.js"
+    ],
+    "/yazilar/page": [
+      "static/chunks/webpack-d1225c659c80d65b.js",
+      "static/chunks/fd9d1056-8f78d26414ffa56c.js",
+      "static/chunks/69-79e73721c11dc586.js",
+      "static/chunks/main-app-6f4c9f2e72be3a9d.js",
+      "static/chunks/749-09f6b922e4da58eb.js",
+      "static/chunks/250-8791d0da9d9f814a.js",
+      "static/chunks/app/yazilar/page-eee239fba94fdad1.js"
+    ]
+  }
 }

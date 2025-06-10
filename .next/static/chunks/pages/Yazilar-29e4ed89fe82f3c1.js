@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[734],{3487:function(n,a,i){(window.__NEXT_P=window.__NEXT_P||[]).push(["/Yazilar",function(){return i(6530)}])},6530:function(n,a,i){"use strict";i.r(a);var r=i(5893);yazi.date,yazi.hazirlayanlar&&(r.Fragment,yazi.hazirlayanlar)}},function(n){n.O(0,[888,774,179],function(){return n(n.s=3487)}),_N_E=n.O()}]);

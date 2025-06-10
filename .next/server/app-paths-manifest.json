@@ -1,1 +1,10 @@
-{}
+{
+  "/_not-found": "app/_not-found.js",
+  "/page": "app/page.js",
+  "/iletisim/page": "app/iletisim/page.js",
+  "/projeler/[slug]/page": "app/projeler/[slug]/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/projeler/page": "app/projeler/page.js",
+  "/yazilar/[slug]/page": "app/yazilar/[slug]/page.js",
+  "/yazilar/page": "app/yazilar/page.js"
+}

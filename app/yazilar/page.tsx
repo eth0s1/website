@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { yazilar } from "../../content/yazilar";
-import Navbar from "../../src/components/Navbar";
+import Navbar from "../../components/Navbar";
 
 export default function Yazilar() {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -23,6 +23,12 @@ export default function Yazilar() {
       }, 100);
     }
   }, []);
+
+  const setRef = (el: HTMLDivElement | null, idx: number) => {
+    if (el) {
+      cardRefs.current[idx] = el;
+    }
+  };
 
   return (
     <>
@@ -70,7 +76,7 @@ export default function Yazilar() {
           {yazilar.map((yazi, idx) => (
             <div
               key={yazi.slug}
-              ref={el => cardRefs.current[idx] = el}
+              ref={(el) => setRef(el, idx)}
               style={{
                 background: '#fff',
                 borderRadius: 22,

@@ -3,7 +3,7 @@ import React from "react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-  const pathname = usePathname();
+  const pathname = usePathname() || '/';
   const links = [
     { href: "/#intro", label: "Giriş" },
     { href: "/#about", label: "Hakkımda" },
@@ -11,6 +11,14 @@ export default function Navbar() {
     { href: "/projeler", label: "Projeler" },
     { href: "/iletisim", label: "İletişim" },
   ];
+
+  const isActive = (href: string) => {
+    if (href === "/#about" || href === "/#intro") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(href.replace("#about", "").replace("#intro", ""));
+  };
+
   return (
     <nav style={{
       width: '100%',
@@ -31,26 +39,23 @@ export default function Navbar() {
       fontFamily: 'Segoe UI, Fira Mono, Arial, sans-serif',
     }}>
       {links.map(link => {
-        const isActive =
-          (link.href === "/#about" && pathname === "/") ||
-          (link.href === "/#intro" && pathname === "/") ||
-          (link.href !== "/#about" && link.href !== "/#intro" && pathname.startsWith(link.href.replace("#about", "").replace("#intro", "")));
+        const active = isActive(link.href);
         return (
           <a
             key={link.href}
             href={link.href}
             style={{
-              color: isActive ? '#0070f3' : '#222',
+              color: active ? '#0070f3' : '#222',
               textDecoration: 'none',
               margin: '0 18px',
-              fontWeight: isActive ? 700 : 500,
-              fontSize: isActive ? '1.25rem' : '1.13rem',
+              fontWeight: active ? 700 : 500,
+              fontSize: active ? '1.25rem' : '1.13rem',
               letterSpacing: 0.3,
-              borderBottom: isActive ? '2.5px solid #0070f3' : '2.5px solid transparent',
+              borderBottom: active ? '2.5px solid #0070f3' : '2.5px solid transparent',
               transition: 'all 0.22s cubic-bezier(.4,2,.6,1)',
               borderRadius: 6,
               padding: '0.2rem 0.7rem',
-              boxShadow: isActive ? '0 2px 12px #0070f322' : 'none',
+              boxShadow: active ? '0 2px 12px #0070f322' : 'none',
             }}
             onMouseEnter={e => {
               e.currentTarget.style.transform = 'scale(1.11)';
@@ -58,7 +63,7 @@ export default function Navbar() {
             }}
             onMouseLeave={e => {
               e.currentTarget.style.transform = 'scale(1)';
-              e.currentTarget.style.boxShadow = isActive ? '0 2px 12px #0070f322' : 'none';
+              e.currentTarget.style.boxShadow = active ? '0 2px 12px #0070f322' : 'none';
             }}
           >
             {link.label}

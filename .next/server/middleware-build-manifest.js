@@ -1,16 +1,1 @@
-globalThis.__BUILD_MANIFEST = {
-  "pages": {
-    "/_app": []
-  },
-  "devFiles": [],
-  "ampDevFiles": [],
-  "polyfillFiles": [],
-  "lowPriorityFiles": [],
-  "rootMainFiles": [],
-  "ampFirstPages": []
-};
-globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
-"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
-,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
-
-];
+self.__BUILD_MANIFEST={polyfillFiles:["static/chunks/polyfills-c67a75d1b6f99dc8.js"],devFiles:[],ampDevFiles:[],lowPriorityFiles:["static/9TIWybD-M4fSmMolwDFrO/_buildManifest.js","static/9TIWybD-M4fSmMolwDFrO/_ssgManifest.js"],rootMainFiles:["static/chunks/webpack-d1225c659c80d65b.js","static/chunks/fd9d1056-8f78d26414ffa56c.js","static/chunks/69-79e73721c11dc586.js","static/chunks/main-app-6f4c9f2e72be3a9d.js"],pages:{"/Yazilar":["static/chunks/webpack-d1225c659c80d65b.js","static/chunks/framework-bdf76ccd7590db8f.js","static/chunks/main-369c679ce889f146.js","static/chunks/pages/Yazilar-29e4ed89fe82f3c1.js"],"/_app":["static/chunks/webpack-d1225c659c80d65b.js","static/chunks/framework-bdf76ccd7590db8f.js","static/chunks/main-369c679ce889f146.js","static/chunks/pages/_app-75f6107b0260711c.js"],"/_error":["static/chunks/webpack-d1225c659c80d65b.js","static/chunks/framework-bdf76ccd7590db8f.js","static/chunks/main-369c679ce889f146.js","static/chunks/pages/_error-9a890acb1e81c3fc.js"]},ampFirstPages:[]};

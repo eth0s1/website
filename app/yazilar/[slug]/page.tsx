@@ -1,65 +1,99 @@
-"use client";
-import React, { useState } from "react";
-import { yazilar } from "../../../content/yazilar";
-import { useParams, notFound } from 'next/navigation';
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { yazilar } from "../../../content/yazilar";
+import Navbar from "../../../components/Navbar";
 
-export default function YaziDetay() {
-  const params = useParams();
-  const slug = params.slug;
-  const yazi = yazilar.find(y => y.slug === slug);
-  const [modalOpen, setModalOpen] = useState(false);
-  if (!yazi) return notFound();
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default function YazilarPage({ params }: PageProps) {
+  const yazi = yazilar.find(y => y.slug === params.slug);
+
+  if (!yazi) {
+    return (
+      <>
+        <Navbar />
+        <main style={{ maxWidth: 1440, margin: '0 auto', padding: '2.5rem 1rem' }}>
+          <h1 style={{ fontSize: '2.7rem', marginBottom: 18, fontWeight: 800, color: '#111', letterSpacing: 0.5, fontFamily: 'Playfair Display, serif', textShadow: '0 2px 12px #0070f322', textAlign: 'center', lineHeight: 1.1 }}>
+            Yazı Bulunamadı
+          </h1>
+          <div style={{ width: '100%', height: 4, background: '#000', borderRadius: 2, marginBottom: 24, maxWidth: 180, margin: '0 auto 24px auto' }} />
+          <p style={{ textAlign: 'center', fontSize: '1.1rem', color: '#444', maxWidth: 800, margin: '0 auto 38px auto', lineHeight: 1.6 }}>
+            Aradığınız yazı bulunamadı. Lütfen ana sayfaya dönün.
+          </p>
+          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <Link href="/yazilar" style={{ 
+              display: 'inline-block',
+              padding: '0.8rem 1.5rem',
+              background: '#000',
+              color: '#fff',
+              textDecoration: 'none',
+              borderRadius: '8px',
+              fontSize: '1.1rem',
+              transition: 'all 0.2s ease'
+            }}>
+              Yazılara Dön
+            </Link>
+          </div>
+        </main>
+      </>
+    );
+  }
+
   return (
-    <main style={{ maxWidth: 900, margin: '0 auto', padding: '2.5rem 1rem' }}>
-      <h1 style={{ fontSize: '2.3rem', fontWeight: 800, color: '#111', letterSpacing: 0.5, fontFamily: 'Segoe UI, Arial, sans-serif', textShadow: '0 2px 12px #0070f322', marginBottom: 18 }}>{yazi.title}</h1>
-      <div style={{ width: '100%', height: 4, background: 'linear-gradient(90deg, #0070f3 0%, #00c6ff 100%)', borderRadius: 2, marginBottom: 32, maxWidth: 180 }} />
-      <div style={{ display: 'flex', flexDirection: 'row', gap: '2.5rem', alignItems: 'flex-start', marginBottom: 32 }}>
-        <div style={{ width: 400, height: 260, background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, borderRadius: 12, overflow: 'hidden', cursor: 'pointer' }}
-          onClick={() => setModalOpen(true)}
-          title="Büyütmek için tıklayın"
-        >
-          <Image src={yazi.image} alt={yazi.title} width={400} height={260} style={{ objectFit: 'contain', width: '100%', height: '100%' }} />
+    <>
+      <Navbar />
+      <main style={{ maxWidth: 1440, margin: '0 auto', padding: '2.5rem 1rem' }}>
+        <h1 style={{ fontSize: '2.7rem', marginBottom: 18, fontWeight: 800, color: '#111', letterSpacing: 0.5, fontFamily: 'Playfair Display, serif', textShadow: '0 2px 12px #0070f322', textAlign: 'center', lineHeight: 1.1 }}>
+          {yazi.title}
+        </h1>
+        <div style={{ width: '100%', height: 4, background: '#000', borderRadius: 2, marginBottom: 24, maxWidth: 180, margin: '0 auto 24px auto' }} />
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 36, width: '100%', minHeight: 400 }}>
+          <div style={{ background: '#fff', borderRadius: 22, boxShadow: '0 8px 40px rgba(0, 0, 0, 0.15)', display: 'flex', flexDirection: 'column', alignItems: 'stretch', overflow: 'hidden', minHeight: 260, maxWidth: 1100, margin: '0 auto', width: '100%' }}>
+            <div style={{ width: '100%', height: 400, background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Image
+                src={yazi.image}
+                alt={yazi.title}
+                width={800}
+                height={400}
+                style={{ objectFit: 'contain', width: '100%', height: '100%' }}
+              />
+            </div>
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '2rem 1.7rem 2.2rem 1.7rem', rowGap: 18, overflowY: 'auto' }}>
+              <div>
+                <p style={{ color: '#444', fontSize: '1.05rem', marginBottom: 20, lineHeight: 1.7, letterSpacing: 0.01 }}>{yazi.description}</p>
+                <div style={{ color: '#888', fontSize: '1.08rem', marginTop: 'auto', letterSpacing: 0.01, lineHeight: 1.5 }}>
+                  {yazi.date}
+                  {yazi.hazirlayanlar && (
+                    <>
+                      <span style={{ margin: '0 6px' }}>•</span>
+                      <span>{yazi.hazirlayanlar}</span>
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <Link href="/yazilar" style={{ 
+              display: 'inline-block',
+              padding: '0.8rem 1.5rem',
+              background: '#000',
+              color: '#fff',
+              textDecoration: 'none',
+              borderRadius: '8px',
+              fontSize: '1.1rem',
+              transition: 'all 0.2s ease'
+            }}>
+              Yazılara Dön
+            </Link>
+          </div>
         </div>
-        <div style={{ flex: 1 }}>
-          <div style={{ color: '#888', fontSize: 16, marginBottom: 10 }}>{yazi.date}</div>
-          <p style={{ fontSize: '1.08rem', color: '#444', lineHeight: 1.7, marginBottom: 18 }}>{yazi.description}</p>
-          <ul style={{ padding: 0, listStyle: 'none', margin: 0 }}>
-            {yazi.files?.map(file => (
-              <li key={file.url} style={{ marginBottom: 8 }}>
-                <a href={file.url} download style={{ color: '#1976d2', textDecoration: 'underline', fontSize: 16 }}>{file.name}</a>
-                <span style={{ color: '#888', marginLeft: 8, fontSize: 14 }}>({file.size})</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      {modalOpen && (
-        <div
-          onClick={() => setModalOpen(false)}
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100vw',
-            height: '100vh',
-            background: 'rgba(0,0,0,0.7)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            zIndex: 1000,
-            cursor: 'zoom-out',
-          }}
-        >
-          <Image
-            src={yazi.image}
-            alt={yazi.title}
-            width={900}
-            height={600}
-            style={{ maxWidth: '90vw', maxHeight: '80vh', objectFit: 'contain', borderRadius: 16, boxShadow: '0 8px 32px #0008' }}
-          />
-        </div>
-      )}
-    </main>
+      </main>
+    </>
   );
 } 
