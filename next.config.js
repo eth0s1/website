@@ -19,6 +19,14 @@ const nextConfig = {
   experimental: {
     caseSensitiveRoutes: true
   },
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/:path*',
+      },
+    ];
+  },
   async headers() {
     return [
       {
@@ -35,6 +43,10 @@ const nextConfig = {
           {
             key: 'X-XSS-Protection',
             value: '1; mode=block',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },
