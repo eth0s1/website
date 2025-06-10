@@ -23,4 +23,8 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig 
+module.exports = {
+  images: {
+    domains: ['www.ethemisildar.com'], // ya da kendi domainin
+  },
+}
