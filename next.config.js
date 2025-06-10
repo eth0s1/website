@@ -1,5 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.(jpg|jpeg|png|gif|svg)$/i,
+      type: 'asset/resource'
+    });
+    return config;
+  },
+  experimental: {
+    caseSensitiveRoutes: true
+  },
   async headers() {
     return [
       {

@@ -40,7 +40,7 @@ export default function PostCard({ post, index }: PostCardProps) {
     >
       <div style={{ width: 400, height: 260, background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
         <Image
-          src="/pp.jpeg"
+          src={post.image}
           alt={post.title}
           width={400}
           height={260}
