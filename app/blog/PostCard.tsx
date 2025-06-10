@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import type { Post } from "@/types/blog";
 
@@ -39,13 +38,10 @@ export default function PostCard({ post, index }: PostCardProps) {
       }}
     >
       <div style={{ width: 400, height: 260, background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-        <Image
+        <img
           src={post.image}
           alt={post.title}
-          width={400}
-          height={260}
           style={{ objectFit: 'contain', width: '100%', height: '100%' }}
-          unoptimized
         />
       </div>
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '2rem 1.7rem 2.2rem 1.7rem', rowGap: 18, overflowY: 'auto', maxHeight: 260 }}>
