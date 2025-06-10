@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    domains: ['www.ethemisildar.com'],
+    unoptimized: true,
+  },
   async headers() {
     return [
       {
@@ -23,8 +27,4 @@ const nextConfig = {
   },
 }
 
-module.exports = {
-  images: {
-    domains: ['www.ethemisildar.com'], // ya da kendi domainin
-  },
-}
+module.exports = nextConfig 

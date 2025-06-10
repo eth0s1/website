@@ -125,7 +125,6 @@ export default function Projeler() {
                     width={400}
                     height={260}
                     style={{ objectFit: 'contain', width: '100%', height: '100%' }}
-                    unoptimized
                   />
                 </div>
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '2rem 1.7rem 2.2rem 1.7rem', rowGap: 18, overflowY: 'auto', maxHeight: 420 }}>
