@@ -236,6 +236,7 @@ export default function Home() {
               <Image
                 src="/1.jpeg"
                 alt="Welcome"
+                unoptimized
                 fill
                 style={{ 
                   objectFit: 'cover'
