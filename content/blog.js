@@ -26,7 +26,7 @@ export const blogPosts = [
     slug: "boost-converter",
     title: "Boost Converter (Yükselten Dönüştürücü Tasarımı)",
     date: "Mayıs 2024",
-    image: "/boostconverter/boostt.jpg",
+    image: "/boostconverter/boosttt.png",
     description:
       "Üniversitede alınan seçmeli Güç Elektroniği dersi kapsamında bir boost converter (yükselten dönüştürücü) devresi tasarlanmış ve bu devrenin MATLAB-Simulink ortamındaki simülasyonu gerçekleştirilmiştir. Simülasyon sırasında elde edilen osiloskop dalga formları, laboratuvar uygulamasında gerçek donanım üzerinde elde edilen osiloskop görüntüleriyle karşılaştırılmış ve gözlemler yapılmıştır.",
     files: [

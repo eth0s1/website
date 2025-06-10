@@ -15,8 +15,8 @@ export const projects = [
     ],
     gallery: [
       "/iot/android_ana_ekran.jpeg",
-      "/iot/3ddd.jpg",
-      "/iot/bottomlayerrr.jpg",
+      "/iot/3ddd.png",
+      "/iot/bottomlayerrr.png",
       "/iot/toplayerrr.jpg",
       "/iot/connectionschematicc.jpg",
       "/iot/mcuschematicc.jpg",
