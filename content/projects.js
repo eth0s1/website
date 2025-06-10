@@ -15,12 +15,12 @@ export const projects = [
     ],
     gallery: [
       "/iot/android_ana_ekran.jpeg",
-      "/iot/3d.jpg",
-      "/iot/bottomlayer.jpg",
-      "/iot/toplayer.jpg",
-      "/iot/connectionschematic.jpg",
-      "/iot/mcuschematic.jpg",
-      "/iot/pwrschematic.jpg"
+      "/iot/3dd.jpg",
+      "/iot/bottomlayerr.jpg",
+      "/iot/toplayerr.jpg",
+      "/iot/connectionschematicc.jpg",
+      "/iot/mcuschematicc.jpg",
+      "/iot/pwrschematicc.jpg"
     ]
   },
   {
@@ -36,11 +36,11 @@ export const projects = [
       { name: "MATLAB Arayüz Dosyası (proje.fig)", url: "/matlabfreq/matlabcode/proje.fig", size: "53KB" }
     ],
     gallery: [
-      "/matlabfreq/ucgen.jpg",
-      "/matlabfreq/rampa.jpg",
-      "/matlabfreq/tamdalgacos.jpg",
-      "/matlabfreq/tamdalgasin.jpg",
-      "/matlabfreq/yarımdalgasin.jpg"
+      "/matlabfreq/ucgenn.jpg",
+      "/matlabfreq/rampaa.jpg",
+      "/matlabfreq/tamdalgacoss.jpg",
+      "/matlabfreq/tamdalgasinn.jpg",
+      "/matlabfreq/yarımdalgasinn.jpg"
     ]
   },
   {
@@ -52,11 +52,11 @@ export const projects = [
       "Bu projede, LM5118 entegresi kullanılarak tasarlanan buck-boost konvertör ile 9V ile 36V arasında değişen giriş gerilimi, sabit 12V çıkışa dönüştürülmüştür. Geniş giriş aralığına sahip bu yapı, hem step-down (buck) hem de step-up (boost) modlarında çalışarak kararlı ve verimli bir çıkış sağlar. Özellikle otomotiv, endüstriyel sistemler ve güneş enerjisi gibi değişken besleme kaynaklarında sabit voltaj gerektiren uygulamalar için uygundur.",
     details: "",
     gallery: [
-      "/buckboost/bottomlayer.jpg",
-      "/buckboost/toplayer.jpg",
-      "/buckboost/buckboost.jpg",
-      "/buckboost/schematic.jpg",
-      "/buckboost/lm5118.jpeg"
+      "/buckboost/bottomlayerr.jpg",
+      "/buckboost/toplayerr.jpg",
+      "/buckboost/buckboostt.jpg",
+      "/buckboost/schematicc.jpg",
+      "/buckboost/lm51188.jpeg"
     ]
   },
   {
@@ -81,12 +81,12 @@ export const projects = [
       "Bu projede, STM32F103 mikrodenetleyici tabanlı, 2 adet step motor, 2 adet DC motor ve 16x2 LCD ekran içeren çok amaçlı bir robot kontrol PCB'si tasarlanmıştır. 12V giriş gerilimiyle çalışan bu kart, 4 adet buton ile robotun yön kontrolünü manuel olarak sağlayacak şekilde planlanmıştır. Kullanıcı girişlerine karşılık gelen hareket bilgileri, LCD ekran üzerinden anlık olarak görüntülenebilecek şekilde yazılım uyumluluğu gözetilerek tasarım yapılmıştır.",
     details: "",
     gallery: [
-      "/rccontrol/3d.jpg",
-      "/rccontrol/toplayer.jpg",
-      "/rccontrol/bottomlayer.jpg",
-      "/rccontrol/schematic.jpg",
-      "/rccontrol/schematic2.jpg",
-      "/rccontrol/schematic3.jpg"
+      "/rccontrol/3dd.jpg",
+      "/rccontrol/toplayerr.jpg",
+      "/rccontrol/bottomlayerr.jpg",
+      "/rccontrol/schematicc.jpg",
+      "/rccontrol/schematic22.jpg",
+      "/rccontrol/schematic33.jpg"
     ]
   },
   {
