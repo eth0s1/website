@@ -33,7 +33,7 @@ export default function ProjeDetay({ params }: ProjeDetayProps) {
       {/* Galeri - Client Component olarak */}
       {project.gallery && project.gallery.length > 0 && (
         <ProjectGallery gallery={project.gallery} title={project.title} slug={project.slug} />
-      )}
+          )}
 
       {/* Dosyalar */}
       {Array.isArray(project.files) && project.files.length > 0 && (
