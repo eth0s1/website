@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    domains: ['www.ethemisildar.com'],
+    unoptimized: true,
+  },
   async headers() {
     return [
       {
